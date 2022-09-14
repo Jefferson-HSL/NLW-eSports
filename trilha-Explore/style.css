@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 75rem;
+    height: 58.125rem;
+    background-image: url(./assets/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+body *{
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+/* main antigo apagado em 12/09/2022 às 21:12
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 36.25rem;
+    height: 53.375rem;
+}*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 8rem;
+}
+
+header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.9rem;
+    height: 7.9rem;
+    background: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+}
+
+header img{
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+}
+
+main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: 36.25rem;
+    width: 90%;
+    max-height: 43.875rem;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+section{
+    width: 100%;
+    height: auto;
+    border-radius: 0.625rem;
+    padding-top: 0.25rem;
+    background-image: linear-gradient(90deg, rgba(149,115,252,1) 0%, rgba(67,231,173,1) 50.52%, rgba(226,212,92,1) 100%);
+}
+
+article{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 36.25rem;
+    height: auto;
+    background: #2A2634;
+    padding: 1.5rem 2rem 2rem;
+    border-radius: 0.5rem;
+}
+
+h2{
+    width: 100%;
+    height: 2.375rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: -0.47px;
+}
+
+p{
+    width: 100%;
+    height: 1.625rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #A1A1AA;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+#game img{
+    width: 5.625rem;
+    height: 7.5rem;
+    border-radius: 0.5rem;
+}
+
+#streamer img{
+    width: 4.375rem;
+    height: 4.375rem;
+}
+
+#rede img{
+    width: 2rem;
+    height: 2rem;
+}
