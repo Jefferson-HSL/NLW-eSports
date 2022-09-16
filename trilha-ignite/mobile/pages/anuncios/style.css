@@ -6,13 +6,20 @@
 
 body{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: column;
-    width: 75rem;
-    height: 58.125rem;
-    background-image: url(./assets/bg.jpg);
+    max-width: 23.438rem;
+    height: 50.75rem;
+    background-image: url(../../assets/bg.png);
     background-position: top center;
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: #121214;
+}
+
+body *{
+    line-height: 160%;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
 }

@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 23.438rem;
+    height: 50.75rem;
+    background-image: url(../../assets/bg.png);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+header img{
+    width: 100%;
+    height: 2.875rem;
+}
+
+main img{
+    width: 13.361rem;
+    height: 7.5rem;
+}
+
+footer img{
+    width: 100%;
+    height: 2.125rem;
+}
