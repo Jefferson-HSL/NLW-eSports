@@ -1,15 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 75rem;
-    height: 58.125rem;
+ul {
+    list-style: none;
+}
+
+body {
     background-image: url(./assets/bg.jpg);
     background-position: top center;
     background-size: 100% auto;
@@ -17,88 +16,105 @@ body{
     background-color: #121214;
 }
 
-body *{
-    color: #ffffff;
+body * {
     font-family: 'Inter', sans-serif;
     line-height: 160%;
 }
 
-/* main antigo apagado em 12/09/2022 às 21:12
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 36.25rem;
-    height: 53.375rem;
-}*/
-
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 8rem;
-    margin-top: 2rem;
+header {
+    padding-top: 32px;
+    height: calc(120px + 32px);
 }
 
-header div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 7.7rem;
-    height: 7.7rem;
-    padding: 0.25rem;
+header div {
+    width: 120px;
+    margin: auto;
     background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+
     border-radius: 50%;
-    transition: transform 0.3s;
-    animation: fromTop 0.3s 0.2s backwards;
+
+    display: flex;
+    padding: 4px;
+
+    transition: transform .3s;
 }
 
-header div:hover{
-    transform: scale(1.1);
+header div:hover {
+    transform: scale(1.1)
 }
 
-header img{
+header div img {
     width: 100%;
-    height: 100%;
     border-radius: 50%;
 }
 
-/* Animation do header */
-
-@keyframes fromTop{
-    from{
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* ------------------ */
-
-main{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    max-width: 36.25rem;
+main {
+    max-width: 580px;
     width: 90%;
-    max-height: 43.875rem;
-    gap: 1.5rem;
-    margin: 2rem auto;
+    margin: 32px auto;
+
+    display: grid;
+    gap: 24px;
 }
 
-section{
-    width: 100%;
-    height: auto;
-    border-radius: 0.625rem;
-    padding-top: 0.25rem;
-    background-image: linear-gradient(90deg, rgba(149,115,252,1) 0%, rgba(67,231,173,1) 50.52%, rgba(226,212,92,1) 100%);
-    animation: fromBottom 0.3s backwards;
+section {
+    color: white;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+section div {
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+section h2 {
+    letter-spacing: -0.47px;
+}
+
+section p {
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+}
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    margin-top: 24px;
+}
+
+section ul li {
+    transition: transform .3s;
+}
+
+section ul li:hover {
+    transform: scale(1.1)
+}
+
+.games-list img {
+    width: 90px;
+    border-radius: 8px;
+}
+
+.channel-list img {
+    border-radius: 50%; 
+    width: 70px;
+    border: 1px solid #443E54;
+}
+
+/* animation */
+
+header div {
+    animation: fromTop .7s .2s backwards;
+}
+
+main section {
+    animation: fromBottom .7s backwards;
 }
 
 main section:nth-child(1) {
@@ -106,89 +122,44 @@ main section:nth-child(1) {
 }
 
 main section:nth-child(2) {
-    animation-delay: 0.4s;
+    animation-delay: .3s;
 }
 
 main section:nth-child(3) {
-    animation-delay: 0.7s;
+    animation-delay: .6s;
 }
 
-/* Animation dos cards*/
-
-@keyframes fromBottom{
-    from{
+@keyframes fromTop {
+    from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(-30px)
     }
 
-    to{
+    to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0)
     }
 }
 
-/* ------------------ */
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px)
+    }
 
-article{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 36.25rem;
-    height: auto;
-    background: #2A2634;
-    padding: 1.5rem 2rem 2rem;
-    border-radius: 0.5rem;
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
 }
 
-h2{
-    width: 100%;
-    height: 2.375rem;
-    font-size: 1.5rem;
-    font-weight: 900;
-    letter-spacing: -0.47px;
+/* Swiper */
+
+section{
+    overflow: hidden;
 }
 
-p{
-    width: 100%;
-    height: 1.625rem;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #A1A1AA;
-}
-
-ul{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-    height: auto;
-    list-style: none;
-    margin-top: 1.5rem;
-}
-
-section ul li{
-    transition: transform 0.3s;
-}
-
-section ul li:hover{
-    transform: scale(1.1);
-}
-
-#game img{
-    width: 5.625rem;
-    height: 7.5rem;
-    border-radius: 0.5rem;
-}
-
-#streamer img{
-    width: 4.375rem;
-    height: 4.375rem;
-    border-radius: 50%;
-    border: 1px solid #443E54;
-}
-
-#rede img{
-    width: 2rem;
-    height: 2rem;
+.swiper-wrapper{
+    flex-wrap: nowrap;
+    gap: 0;
 }
