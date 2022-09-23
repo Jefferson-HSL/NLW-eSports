@@ -12,7 +12,7 @@ Maratona de Ensino de Desenvolvimento Web pela Rocketseat chamada de NLW eSports
 
 >Trilha Ignite - Mobile
 
-![preview](./trilha-ignite/.github/preview-mobile.png)
+<img src="./trilha-ignite/.github/preview-mobile.png" width="400" height="800">
 
 [Clique aqui para acessar](https://jefferson-hsl.github.io/NLW-eSports/trilha-ignite/mobile/pages/splash/)
 
