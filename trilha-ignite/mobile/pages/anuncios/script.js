@@ -8,3 +8,8 @@ setInterval(function() {
         window.location.assign('../conectado/');
     }
 }, 1000)
+
+
+function modal(){
+    
+}
