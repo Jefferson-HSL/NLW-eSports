@@ -27,3 +27,4 @@ Maratona de Ensino de Desenvolvimento Web pela Rocketseat chamada de NLW eSports
 - HTML 5
 - CSS 3
 - Git e GitHub
+- Framework Swiper
